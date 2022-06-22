@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: rgba(141, 229, 229, 0.594);
+    width: 434px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200vh;
+    /* font-family: 'Source Code Pro', monospace; */
+    font-size: 25px;
+    transition:transform 0.3s ease-in ;
+}
+
+.sidbar nav{
+    padding : 45px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding : 33px 0;
+    margin-left: 20px;
+}
+
+.sidebar nav li a {
+   text-decoration: none;
+   color: black;
+}
+
+.infocontainer{
+    /* background-color: aquamarine; */
+    width: 70vw;
+    height: 75vh;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hello{
+    font-size: 50px;
+    
+}
+
+.name,.name1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about{
+    font-size: 30px;
+}
+/* .moreabout{
+    font-size: 20px;
+    margin-top: 25px;
+} */
+
+.buttons{
+ margin-top: 35px;
+}
+
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: rgb(56, 48, 48);
+    background-color: rgba(48, 219, 219, 0.541) ;
+    font-weight: bold;
+    font-size: 21px;
+    margin:0 3px;
+    cursor: pointer;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+.buttons button:hover{
+    background-color: azure;
+    color: brown;
+}
+
+.main{
+    /* background-color: beige; */
+    width: 85vw;
+    padding: 10px;
+}
+
+.devInfo{
+    display: flex;
+     justify-content: center; 
+     flex-direction: column;
+     font-family: 'Source Code Pro', monospace;
+     margin-left: 20px;
+}
+
+.devPic img{
+    width: 375px;
+   height: 75vh;
+   
+}
+
+.container{
+    display: flex;
+}
+
+.contactform{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    padding-top: 200px;
+    padding: 0 34px;
+}
+
+.contactform form div{
+    padding: 20px 0;
+}
+
+.contactform form div input{
+    width: 16vw;
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+#ContactReason {
+   display: flex;
+   flex-direction: column;
+   width: 500px;
+}
+
+.contactform button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: rgb(56, 48, 48);
+    background-color: rgba(154, 248, 248, 0.541) ;
+    font-weight: bold;
+    font-size: 21px;
+    margin:0 3px;
+    cursor: pointer;
+}
+
+.contactform button:hover{
+    background-color: azure;
+    color: brown;
+}
+/* @media screen and (min-width: 500px) and (max-width: 900px) */
+
+.COLOUMN {
+    box-shadow: 0 4px 8px 0 #ceceee;;
+    transition: 0.3s;
+    width: 40%;
+    padding: 85px;
+}
+
+.skills{
+    /* box-shadow: 0 4px 8px 0 rgb(8 179 31 / 20%); */
+    /* box-shadow:  rgb(10 228 228 / 59%); */
+    box-shadow: #6d6fd5;
+    display: block;
+    padding: 10px;
+    border-radius:100px;
+     width: 10vw;
+    justify-content: center;
+    display: flex;
+   margin: 15px;
+   border-radius: 50%;
+        cursor: pointer;
+        text-align: center;
+        height: 34px;
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-family: Arial, Helvetica, sans-serif;
+        /* background-color: rgb(47 127 101); */
+        background-color: #07136a;;
+        padding: 24px;
+        color: white;
+        margin-bottom: 4px;
+
+}
+
+
+.ROW{
+        display: flex;
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 34px;
+    
+}
+
+
+.ROW .COLOUMN{
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 34px;
+}
+
+
+@media (max-width :900px){
+    .COLOUMN{
+        margin-top: 50px;
+    }
+    .contactform,.COLOUMN p{
+        font-size: small;
+    }
+    .COLOUMN h1{
+        font-size: medium;
+    }
+    .devInfo{
+        width: 50px;
+        height: 50px;
+        padding-top: 200px;
+    }
+    .devInfo h1{
+        display: none;
+    }
+    .devPic img{
+        display: none;
+    }
+    .sidebar{
+        /* transform: translate(-443px,0px); */
+        position: absolute;
+    }
+    .hello{
+        font-size: 30px;
+    }
+    .name1{
+        display: none;
+    }
+.about{
+    font-size: 15px;
+}
+.moreabout{
+    font-size: 10px;
+}
+
+.buttons button{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: light;
+    padding: 0 5px;
+}
+
+.hobby{
+    display: none;
+}
+}
+.CARD{
+    padding: 10px;
+}
+
+.projects{
+    box-shadow: #6d6fd5;
+    display: block;
+    padding: 10px;
+    border-radius:100px;
+     width: 10vw;
+    justify-content: center;
+    display: flex;
+   margin: 15px;
+   border-radius: 50%;
+        cursor: pointer;
+        text-align: center;
+        height: 34px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #11bdec;;
+        padding: 24px;
+        color: rgb(46, 3, 105);
+        margin-bottom: 4px;
+}
+
+.footer{
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px){
+.footer{
+    width: 1200px;
+}
+}
+
+.box{
+    width: 100vw;
+     display: flex;
+    justify-content:center;
+   /* align-content: center; */
+    cursor: pointer;
+    color: blue;
+    margin-top: 40px;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.sidebarGo{
+    transform: translate(-443px,0px);
+    width: 434px;
+    position: absolute;
+}
